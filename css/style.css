@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+:root{
+    --bg: #ffffee;
+    --text: #000000;
+    --primary: #bfe7fd;
+    --secondary: #FFF;
+    --accent: #FFF;
+}
+
+
+.jost {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+body{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    background-color: var(--bg);
+    font-family: "jost", sans-serif;
+}
+
+svg {
+    pointer-events: none;
+}
+
+.navbar-container{
+    width: 100%;
+    padding: 0px;
+    background-color: var(--primary);
+    padding: 5px;
+}
+
+.navbar-content{
+    height: fit-content;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-left: 10px;
+    padding: 5px 5px 0 5px;
+}
+
+.title{
+    height: 100%;
+    padding: 5px 5px 0 5px;
+}
+
+.dropdown-button{
+    margin-right: 30px;
+    user-select: none;
+    padding: 5px 5px 0 5px;
+    background-color: var(--secondary);
+    border-radius: 10px;
+}
+
+
+.dropdown-button:hover{
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--primary);
+    z-index: 1;
+    min-width: 200px;
+    top: 45px;
+    right: 50px;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+    align-items: center;
+}
