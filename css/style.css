@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+
 :root{
     --bg: #ffffee;
     --text: #000000;
-    --primary: #eeeeee;
+    --primary: #bfe7fd;
     --secondary: #FFF;
-    --accent: #eeeeee;
+    --accent: #FFF;
 }
 
 
@@ -31,6 +33,10 @@ body{
     overflow-x: hidden;
     background-color: var(--bg);
     font-family: "jost", sans-serif;
+}
+
+svg {
+    pointer-events: none;
 }
 
 .navbar-container{
@@ -75,7 +81,7 @@ body{
     display: flex;
   }
 
-.dropdown-content {
+  .dropdown-content {
     display: none;
     position: absolute;
     background-color: var(--primary);
