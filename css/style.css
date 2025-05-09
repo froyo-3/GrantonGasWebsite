@@ -171,6 +171,14 @@ svg {
     right: 6%;
 }
 
+.caption{
+    color: var(--bg);
+    position: absolute;
+    top: 47%;
+    width: 100%;
+    text-align: center;
+}
+
 
 @media only screen and (max-width: 800px) {
     .desktop-links {
