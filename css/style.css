@@ -3,11 +3,11 @@
 
 
 :root{
-    --bg: #ffffee;
+    --bg: #FFFAEF;
     --text: #000000;
-    --primary: #bfe7fd;
-    --secondary: #FFF;
-    --accent: #FFF;
+    --primary: #b6d8ff;
+    --secondary: #9FB3DF;
+    --accent: #BDDDE4;
 }
 
 
@@ -40,10 +40,11 @@ svg {
 }
 
 .navbar-container{
-    width: 100%;
+    margin: 10px;
     padding: 0px;
     background-color: var(--primary);
     padding: 5px;
+    border-radius: 10px;
 }
 
 .navbar-content{
@@ -51,7 +52,7 @@ svg {
     display: flex;
     align-content: center;
     justify-content: space-between;
-    margin: 0px 20px;
+    margin: 0px 3px;
 }
 
 .logo{
@@ -61,7 +62,7 @@ svg {
 }
 
 .logo img{
-    height: 25px;
+    height: 30px;
 }
 .title{
     padding: 5px 5px 0 5px;
@@ -72,7 +73,7 @@ svg {
 .dropdown-button{
     user-select: none;
     padding: 5px 5px 0 5px;
-    background-color: var(--secondary);
+    background-color: var(--bg);
     border-radius: 10px;
     
 }
@@ -84,6 +85,9 @@ svg {
     margin-right: 20px;
 }
 
+.desktop-hide{
+    display: none;
+}
 
 .dropdown-button:hover{
     cursor: pointer;
@@ -101,8 +105,8 @@ svg {
   background-color: var(--primary);
   z-index: 1;
   min-width: 200px;
-  top: 40px;
-  right: 15px;
+  top: 50px;
+  right: 20px;
   flex-direction: column;
   gap: 10px;
   border-radius: 0px 0px 5px 5px;
@@ -110,8 +114,52 @@ svg {
   align-items: center;
 }
 
+
+.carosel{
+    overflow: hidden;
+    z-index: 0;
+}
+
+.slide{
+    display: none;
+    top: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.slide .image{
+    width: 100vw;
+    object-fit: cover;
+    height: 93vh;
+    filter: brightness(50%);
+    z-index: 0;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.arrow{
+    user-select: none;
+    cursor: pointer;
+}
+
+
 @media only screen and (max-width: 800px) {
     .desktop-links {
       display:none;
+    }
+    .desktop-hide{
+        display: block;
     }
   }
