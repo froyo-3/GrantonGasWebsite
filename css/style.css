@@ -40,6 +40,7 @@ svg {
 }
 
 .navbar-container{
+    position: sticky;
     margin: 10px;
     padding: 0px;
     background-color: var(--primary);
@@ -118,6 +119,7 @@ svg {
 .carosel{
     overflow: hidden;
     z-index: 0;
+    position: relative;
 }
 
 .slide{
@@ -128,11 +130,13 @@ svg {
 }
 
 .slide .image{
-    width: 100vw;
+    width: 90%;
+    height: 70vh;
+    margin: 0 5%;
     object-fit: cover;
-    height: 93vh;
     filter: brightness(50%);
     z-index: 0;
+    border-radius: 10px;
 }
 
 .fade {
@@ -150,8 +154,21 @@ svg {
 }
 
 .arrow{
+    position: absolute;
+    top: 50%;
     user-select: none;
     cursor: pointer;
+    color:white;
+    padding: 10px;
+}
+
+.back{
+    left: 6%;
+    
+}
+
+.forward{
+    right: 6%;
 }
 
 
@@ -161,5 +178,10 @@ svg {
     }
     .desktop-hide{
         display: block;
+    }
+    .slide .image{
+        height: 50vh;
+        width: 90%;
+        margin: 0 5%;;
     }
   }

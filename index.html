@@ -44,28 +44,24 @@
     <div class="carosel">
       <div class="slide fade">
         <img class="image" src="img/placeholder.jpg">
-        1
       </div>
       <div class="slide fade">
         <img class="image" src="img/placeholder.jpg">
-        2
       </div>
       <div class="slide fade">
         <img class="image" src="img/placeholder.jpg">
-        3
       </div>
       <div class="slide fade">
         <img class="image" src="img/placeholder.jpg">
-        4
       </div>
-      
+      <span class="material-symbols-outlined arrow back" onclick="changeslide(-1)">
+        arrow_back
+      </span>
+      <span class="material-symbols-outlined arrow forward" onclick="changeslide(1)">
+        arrow_forward
+      </span>
     </div>
-    <span class="material-symbols-outlined arrow" onclick="changeslide(-1)">
-      arrow_back
-    </span>
-    <span class="material-symbols-outlined arrow forward" onclick="changeslide(1)">
-      arrow_forward
-    </span>
+    
 
     <script>
       let slideIndex = 1;
