@@ -14,6 +14,20 @@ function OpenDropdown(){
     }
 };
 
+function changeimgslide(newslide){
+  function slides(newslide){
+    slides = document.getElementsByClassName("img-slide");
+    if (newslide > slides.length) {imgslideIndex = 1}
+    if (newslide < 1) {imgslideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[imgslideIndex-1].style.display = "block";
+  }
+  slides(imgslideIndex+=newslide);
+}
+
+
 function changeslide(newslide){
   function slides(newslide){
     slides = document.getElementsByClassName("slide");
@@ -26,4 +40,3 @@ function changeslide(newslide){
   }
   slides(slideIndex+=newslide);
 }
-

@@ -33,6 +33,7 @@ body{
     overflow-x: hidden;
     background-color: var(--bg);
     font-family: "jost", sans-serif;
+    color: var(--text);
 }
 
 svg {
@@ -43,9 +44,10 @@ svg {
     position: sticky;
     margin: 10px;
     padding: 0px;
-    background-color: var(--primary);
+    background-color: var(--accent);
     padding: 5px;
     border-radius: 10px;
+    z-index: 1000;
 }
 
 .navbar-content{
@@ -103,10 +105,10 @@ svg {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: var(--primary);
-  z-index: 1;
+  background-color: var(--accent);
+  z-index: 3;
   min-width: 200px;
-  top: 50px;
+  top: 43px;
   right: 20px;
   flex-direction: column;
   gap: 10px;
@@ -122,14 +124,14 @@ svg {
     position: relative;
 }
 
-.slide{
+.img-slide{
     display: none;
     top: 0;
     z-index: -1;
     overflow: hidden;
 }
 
-.slide .image{
+.img-slide .image{
     width: 90%;
     height: 70vh;
     margin: 0 5%;
@@ -160,6 +162,7 @@ svg {
     cursor: pointer;
     color:white;
     padding: 10px;
+    z-index: 0;
 }
 
 .back{
@@ -177,6 +180,29 @@ svg {
     top: 47%;
     width: 100%;
     text-align: center;
+}
+
+.page-selector{
+    position: relative;
+    width: 80%;
+    margin: 0 10%;
+    background-color: var(--accent);
+    border-radius: 10px;
+    height:300px;
+}
+
+.slide{
+    color: var(--text);
+    text-align: center;
+    margin: 0px;
+}
+
+.slide h1{
+    padding: 50px 0;
+}
+
+.slide p{
+    margin: 0 20%;
 }
 
 
