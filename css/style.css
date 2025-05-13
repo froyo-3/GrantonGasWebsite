@@ -182,13 +182,16 @@ svg {
     text-align: center;
 }
 
-.page-selector{
+.section{
     position: relative;
     width: 80%;
-    margin: 0 10%;
+    margin: 20px 10%;
     background-color: var(--accent);
     border-radius: 10px;
-    min-height:300px;
+}
+
+.page-selector{
+    min-height: 300px;
 }
 
 .slide{
@@ -206,6 +209,16 @@ svg {
     padding: 0 0 50px 0;
 }
 
+.socials{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0 0 0;
+}
+
+.socials img{
+    width:50px;
+    height: 50px;
+}
 
 @media only screen and (max-width: 800px) {
     .desktop-links {
@@ -217,7 +230,7 @@ svg {
     .img-slide .image{
         height: 70vh;
     }
-    .page-selector{
+    .section{
         width: 90%;
         margin: 0 5%;
     }
