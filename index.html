@@ -13,6 +13,7 @@
     />
   </head>
   <body>
+    <!-- needs proper links and text, replace both links 1, 2 and 3 with same link -->
     <div class="navbar-container">
       <div class="navbar-content">
         <div class="logo">
@@ -40,11 +41,8 @@
       </div>
     </div>
 
+    <!-- put images and appropriate captions here-->
     <div class="carosel">
-      <div class="img-slide fade">
-        <img class="image" src="img/placeholder.jpg" />
-        <h1 class="caption">caption 4</h1>
-      </div>
       <div class="img-slide fade">
         <img class="image" src="img/placeholder.jpg" />
         <h1 class="caption">caption 1</h1>
@@ -56,6 +54,10 @@
       <div class="img-slide fade">
         <img class="image" src="img/placeholder.jpg" />
         <h1 class="caption">caption 3</h1>
+      </div>
+      <div class="img-slide fade">
+        <img class="image" src="img/placeholder.jpg" />
+        <h1 class="caption">caption 4</h1>
       </div>
       <span
         class="material-symbols-outlined arrow back"
@@ -71,18 +73,8 @@
       </span>
     </div>
 
+    <!-- needs proper links and text -->
     <div class="page-selector">
-      <div class="slide">
-        <a href="#">
-          <h1>Page Title 4</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            recusandae provident nam accusantium quia commodi similique
-            explicabo voluptatibus blanditiis natus? Nisi corrupti eum
-            perferendis in debitis facilis omnis, explicabo libero.
-          </p>
-        </a>
-      </div>
       <div class="slide">
         <a href="#">
           <h1>Page Title 1</h1>
@@ -116,6 +108,17 @@
           </p>
         </a>
       </div>
+      <div class="slide">
+        <a href="#">
+          <h1>Page Title 4</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            recusandae provident nam accusantium quia commodi similique
+            explicabo voluptatibus blanditiis natus? Nisi corrupti eum
+            perferendis in debitis facilis omnis, explicabo libero.
+          </p>
+        </a>
+      </div>
       <span
         class="material-symbols-outlined arrow back"
         onclick="changeslide(-1)"
@@ -130,11 +133,27 @@
       </span>
     </div>
 
+    <div class="footer">
+      <div class="form">
+        <form>
+          <input type="text" id="email" name="email" placeholder="email:">
+          <input type="submit" value="submit">
+        </form>
+      </div>
+      <div class="socials">
+        <!-- put social media links and images here-->
+        <a href="#" class="social-logo"><img src="https://placehold.co/500x500"></a>
+        <a href="#" class="social-logo"><img src="https://placehold.co/500x500"></a>
+        <a href="#" class="social-logo"><img src="https://placehold.co/500x500"></a>
+        <a href="#" class="social-logo"><img src="https://placehold.co/500x500"></a>
+      </div>
+    </div>
+
     <script>
       let imgslideIndex = 1;
-      changeimgslide(imgslideIndex);
+      changeimgslide(0);
       let slideIndex = 1;
-      changeslide(slideIndex);
+      changeslide(0);
       dropdown.style.display = "none";
     </script>
   </body>

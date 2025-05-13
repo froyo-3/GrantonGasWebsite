@@ -133,7 +133,7 @@ svg {
 
 .img-slide .image{
     width: 90%;
-    height: 70vh;
+    height: 80vh;
     margin: 0 5%;
     object-fit: cover;
     filter: brightness(50%);
@@ -160,7 +160,7 @@ svg {
     top: 50%;
     user-select: none;
     cursor: pointer;
-    color:white;
+    color:var(--bg);
     padding: 10px;
     z-index: 0;
 }
@@ -188,7 +188,7 @@ svg {
     margin: 0 10%;
     background-color: var(--accent);
     border-radius: 10px;
-    height:300px;
+    min-height:300px;
 }
 
 .slide{
@@ -203,6 +203,7 @@ svg {
 
 .slide p{
     margin: 0 20%;
+    padding: 0 0 50px 0;
 }
 
 
@@ -213,9 +214,11 @@ svg {
     .desktop-hide{
         display: block;
     }
-    .slide .image{
-        height: 50vh;
+    .img-slide .image{
+        height: 70vh;
+    }
+    .page-selector{
         width: 90%;
-        margin: 0 5%;;
+        margin: 0 5%;
     }
   }
