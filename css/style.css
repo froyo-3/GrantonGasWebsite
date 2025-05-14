@@ -270,6 +270,38 @@ p{
     height: auto;
 }
 
+.history{
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.history-point{
+    display: flex;
+    align-items: center;
+}
+
+.left{
+    flex-direction: row;
+}
+.right{
+    flex-direction: row-reverse;
+}
+
+.history-point-info img{
+    width: 70%;
+    margin: 0 15%;
+}
+
+.history-point-info{
+    width: 70%;
+}
+.history-point h2{
+    width: 30%;
+    text-align: center;
+}
+
 @media only screen and (max-width: 800px) {
     .desktop-links {
       display:none;
@@ -291,5 +323,9 @@ p{
     }
     .index-info img{
     width: 100%;
+    }
+    .history-point-info img{
+    width: 100%;
+    margin: 0;
 }
   }
