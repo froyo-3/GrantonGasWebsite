@@ -40,6 +40,10 @@ svg {
     pointer-events: none;
 }
 
+p{
+    font-size: large;
+}
+
 .navbar-container{
     position: sticky;
     top: 10px;
@@ -255,6 +259,17 @@ svg {
     height: 50px;
 }
 
+.index-info{
+    background-color: var(--bg);
+    display: flex;
+    gap: 30px;
+}
+
+.index-info img{
+    width: 30vw;
+    height: auto;
+}
+
 @media only screen and (max-width: 800px) {
     .desktop-links {
       display:none;
@@ -262,10 +277,19 @@ svg {
     .desktop-hide{
         display: block;
     }
+    .mobile-hide{
+        display: none;
+    }
     .img-slide .image{
         height: 70vh;
     }
     .form input[type=text]{
         width: 150px;
     }
+    .index-info{
+        flex-direction: column;
+    }
+    .index-info img{
+    width: 100%;
+}
   }
