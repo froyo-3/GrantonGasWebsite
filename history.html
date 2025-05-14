@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=arrow_back,arrow_forward,menu"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- needs proper links and text, replace both links 1, 2 and 3 with same link -->
+    <div class="navbar-container">
+      <div class="navbar-content">
+        <div class="logo">
+          <!-- put logo here -->
+          <a href="/"><img src="img/logo.png" /></a>
+        </div>
+        <div class="title">Home</div>
+        <div class="dropdown">
+          <div class="desktop-links">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+          <span class="dropdown-button" onclick="OpenDropdown()">
+            <span class="material-symbols-outlined"> menu </span>
+          </span>
+          <div class="dropdown-content" id="dropdown">
+            <a class="desktop-hide" href="#">Link 1</a>
+            <a class="desktop-hide" href="#">Link 2</a>
+            <a class="desktop-hide" href="#">Link 3</a>
+            <a href="#"> Link 4 </a>
+            <a href="#"> Link 5 </a>
+            <a href="#"> Link 6 </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- history bit -->
+    
+    <!-- needs proper links and text -->
+    <div class="section page-selector">
+      <div class="slide">
+        <a href="#">
+          <h1>Page Title 1</h1>
+          <p>
+            <!-- text here -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            recusandae provident nam accusantium quia commodi similique
+            explicabo voluptatibus blanditiis natus? Nisi corrupti eum
+            perferendis in debitis facilis omnis, explicabo libero.
+          </p>
+        </a>
+      </div>
+      <div class="slide">
+        <a href="#">
+          <h1>Page Title 2</h1>
+          <p>
+            <!-- text here -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            recusandae provident nam accusantium quia commodi similique
+            explicabo voluptatibus blanditiis natus? Nisi corrupti eum
+            perferendis in debitis facilis omnis, explicabo libero.
+          </p>
+        </a>
+      </div>
+      <div class="slide">
+        <a href="#">
+          <h1>Page Title 3</h1>
+          <p>
+            <!-- text here -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            recusandae provident nam accusantium quia commodi similique
+            explicabo voluptatibus blanditiis natus? Nisi corrupti eum
+            perferendis in debitis facilis omnis, explicabo libero.
+          </p>
+        </a>
+      </div>
+      <div class="slide">
+        <a href="#">
+          <h1>Page Title 4</h1>
+          <p>
+            <!-- text here -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            recusandae provident nam accusantium quia commodi similique
+            explicabo voluptatibus blanditiis natus? Nisi corrupti eum
+            perferendis in debitis facilis omnis, explicabo libero.
+          </p>
+        </a>
+      </div>
+      <span
+        class="material-symbols-outlined arrow back"
+        onclick="changeslide(-1)"
+      >
+        arrow_back
+      </span>
+      <span
+        class="material-symbols-outlined arrow forward"
+        onclick="changeslide(1)"
+      >
+        arrow_forward
+      </span>
+    </div>
+
+    <div class="section footer">
+      <div class="form">
+        <form>
+          <input type="text" id="email" name="email" placeholder="email:">
+          <input type="submit" value="submit">
+        </form>
+      </div>
+      <div class="socials">
+        <!-- put social media links and images here-->
+        <a href="#" class="social-logo"><img src="https://placehold.co/500x500"></a>
+        <a href="#" class="social-logo"><img src="https://placehold.co/500x500"></a>
+        <a href="#" class="social-logo"><img src="https://placehold.co/500x500"></a>
+        <a href="#" class="social-logo"><img src="https://placehold.co/500x500"></a>
+      </div>
+    </div>
+
+    <script>
+      let imgslideIndex = 1;
+      changeimgslide(0);
+      let slideIndex = 1;
+      changeslide(0);
+      dropdown.style.display = "none";
+    </script>
+  </body>
+</html>
