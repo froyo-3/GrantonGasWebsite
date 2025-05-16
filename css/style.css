@@ -364,6 +364,7 @@ p{
 .gallery-image{
     width: 100%;
     margin-bottom: 0;
+    vertical-align: middle;
 }
 
 .gallery-image:hover{
