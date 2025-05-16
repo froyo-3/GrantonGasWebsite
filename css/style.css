@@ -367,11 +367,6 @@ p{
     vertical-align: middle;
 }
 
-.gallery-image:hover{
-    filter: brightness(40%);
-    transition: ease 0.5s;
-}
-
 .hover-text{
     display: none;
     position: absolute;
@@ -383,6 +378,12 @@ p{
     pointer-events: none;
     color: var(--bg);
 }
+
+.gallery-item:hover .gallery-image{
+    filter: brightness(40%);
+    transition: ease 0.5s;
+}
+
 .gallery-item:hover .hover-text{
     display: block;
     transition: ease 0.5s;
