@@ -349,21 +349,22 @@ p{
 }
 
 .column{
-    flex: 24.25%;
-    max-width: 24.25%;
+    flex: 25%;
+    width: 25%;
 }
 
 .gallery-item{
-    width: 100%;
+    width: 100% - 10px;
     height: min-content;
     position: relative;
     cursor: pointer;
     z-index: 0;
+    padding: 10px;
 }
 
 .gallery-image{
     width: 100%;
-    margin-bottom: 0;
+    vertical-align: middle;
 }
 
 .gallery-image:hover{
@@ -403,8 +404,8 @@ p{
         width: 40%;
     }
     .column{
-        flex: 49.5%;
-        max-width: 49.5%;
+        flex: 50%;
+        max-width: 50%;
     }
 }
 
