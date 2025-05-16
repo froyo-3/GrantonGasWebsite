@@ -365,6 +365,7 @@ p{
 .gallery-image{
     width: 100%;
     vertical-align: middle;
+    border-radius: 10px;
 }
 
 .hover-text{
@@ -469,6 +470,9 @@ p{
     .column{
         flex: 100%;
         max-width: 100%;
+    }
+    .featured img{
+        border-radius: 10px 10px 0 0;
     }
 
 }
