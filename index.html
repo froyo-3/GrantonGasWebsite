@@ -13,6 +13,7 @@
     />
   </head>
   <body>
+    <!--navbar -->
     <!-- needs proper links and text, replace both links 1, 2 and 3 with same link -->
     <div class="navbar-container">
       <div class="navbar-content">
@@ -37,12 +38,13 @@
             <a href="#"> Link 4 </a>
             <a href="#"> Link 5 </a>
             <a href="#"> Link 6 </a>
+            <!-- to add another link just copy paste 1 link from above-->
           </div>
         </div>
       </div>
     </div>
 
-    
+    <!-- image carosel -->
     <!-- put images and appropriate captions here-->
     <div class="carosel">
       <div class="img-slide fade">
@@ -57,10 +59,12 @@
         <img class="image" src="img/placeholder.jpg" />
         <h1 class="caption">caption 3</h1>
       </div>
+      <!-- Copy from here -->
       <div class="img-slide fade">
         <img class="image" src="img/placeholder.jpg" />
         <h1 class="caption">caption 4</h1>
       </div>
+      <!-- to here to add another -->
       <span
         class="material-symbols-outlined arrow back"
         onclick="changeimgslide(-1)"
@@ -74,7 +78,7 @@
         arrow_forward
       </span>
     </div>
-
+    <!-- the info that shows up on the main page-->
     <div class="section index-info">
       <div>
         <h2> Potential Subtitle </h2>
@@ -83,6 +87,7 @@
       <img src="https://placehold.co/700x500">
     </div>
 
+    <!-- footer / page selector-->
     <!-- needs proper links and text -->
     <div class="section page-selector">
       <div class="slide">
@@ -121,6 +126,7 @@
           </p>
         </a>
       </div>
+      <!-- Copy from here -->
       <div class="slide">
         <a href="#">
           <h1>Page Title 4</h1>
@@ -133,6 +139,7 @@
           </p>
         </a>
       </div>
+      <!-- to here to add another -->
       <span
         class="material-symbols-outlined arrow back"
         onclick="changeslide(-1)"
@@ -147,6 +154,7 @@
       </span>
     </div>
 
+    <!-- email and socials-->
     <div class="section footer">
       <div class="form">
         <form>
@@ -163,6 +171,8 @@
       </div>
     </div>
 
+
+    <!-- js stuff -->
     <script>
       let imgslideIndex = 1;
       changeimgslide(0);
