@@ -306,8 +306,9 @@ p{
 .news{
     background-color: var(--bg);
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1%;
 }
 
 .article{
@@ -315,14 +316,18 @@ p{
     gap: 30px;
     background-color: var(--accent);
     border-radius: 10px;
+    text-decoration: none;
+    margin-bottom: 10px;
 }
 
 .featured{
     height: 400px;
+    width: 100%;
 }
 
 .regular-article{
     height: 250px;
+    width: 49.5%;
 }
 
 .article img{
@@ -334,20 +339,73 @@ p{
 
 .news-text{
     width: 50%;
-    overflow: hidden;
+    color: var(--text);
 }
+
+.gallery{
+    background-color: var(--bg);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column{
+    flex: 24.25%;
+    max-width: 24.25%;
+}
+
+.gallery-item{
+    width: 100%;
+    height: min-content;
+    position: relative;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.gallery-image{
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.gallery-image:hover{
+    filter: brightness(40%);
+    transition: ease 0.5s;
+}
+
+.hover-text{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+    pointer-events: none;
+    color: var(--bg);
+}
+.gallery-item:hover .hover-text{
+    display: block;
+    transition: ease 0.5s;
+}
+
 
 @media only screen and (max-width: 1200px) {
     .index-info{
         flex-direction: column;
     }
     .index-info img{
-    width: 80%;
-    margin: 0 10%;
+        width: 80%;
+        margin: 0 10%;
+    }
+    .regular-article{
+        width: 100%;
     }
     .article img{
-    width: 40%;
-}
+        width: 40%;
+    }
+    .column{
+        flex: 49.5%;
+        max-width: 49.5%;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -377,10 +435,38 @@ p{
     width: 100%;
     margin: 0;
     }
+
     .featured{
-        height: 300px;
+        height: fit-content;
+        flex-direction: column;
+        gap: 5px;
     }
+    .featured img{
+        width: 100%;
+    }
+
+    .featured .news-text{
+        width: 90%;
+        margin: 0 5%;
+        padding: 5px;
+    }
+
     .regular-article{
         height: 150px;
     }
+
+    .regular-article h2{
+        line-height: 0.8;
+    }
+    .regular-article .news-text{
+        padding: 5px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1.2;
+    }
+    .column{
+        flex: 100%;
+        max-width: 100%;
+    }
+
 }
