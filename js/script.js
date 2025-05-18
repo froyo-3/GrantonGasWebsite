@@ -40,3 +40,4 @@ function changeslide(newslide){
   }
   slides(slideIndex+=newslide);
 }
+
