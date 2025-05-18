@@ -405,6 +405,37 @@ p{
     text-align: center;
 }
 
+.contact-form{
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+    gap: 5px;
+}
+
+.contact-form input[type=text]{
+    width: 90%;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+}
+.contact-form textarea{
+    width: 90%;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    resize: vertical;
+}
+.contact-form input[type=submit]{
+    width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+
+
 @media only screen and (max-width: 1200px) {
     .index-info{
         flex-direction: column;
