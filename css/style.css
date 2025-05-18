@@ -390,6 +390,20 @@ p{
     transition: ease 0.5s;
 }
 
+.location{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg);
+}
+
+.location iframe{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.location-text{
+    text-align: center;
+}
 
 @media only screen and (max-width: 1200px) {
     .index-info{

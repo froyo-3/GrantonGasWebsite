@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=arrow_back,arrow_forward,menu"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- needs proper links and text, replace both links 1, 2 and 3 with same link -->
+    <div class="navbar-container">
+      <div class="navbar-content">
+        <div class="logo">
+          <!-- put logo here -->
+          <a href="/"><img src="img/logo.png" /></a>
+        </div>
+        <div class="title">Home</div>
+        <div class="dropdown">
+          <div class="desktop-links">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+          <span class="dropdown-button" onclick="OpenDropdown()">
+            <span class="material-symbols-outlined"> menu </span>
+          </span>
+          <div class="dropdown-content" id="dropdown">
+            <a class="desktop-hide" href="#">Link 1</a>
+            <a class="desktop-hide" href="#">Link 2</a>
+            <a class="desktop-hide" href="#">Link 3</a>
+            <a href="#"> Link 4 </a>
+            <a href="#"> Link 5 </a>
+            <a href="#"> Link 6 </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="section location">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2232.195336571877!2d-3.247170129635123!3d55.98064498647802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c70c6819c1bf%3A0x891101c63dcd221c!2sGranton%20Gas%20Holder!5e0!3m2!1sen!2suk!4v1747560679492!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="location-text">
+        <h2> ADDRESS </h2>
+        <p> line 1</p>
+        <p> line 1</p>
+        <p> line 1</p>
+      </div>
+    </div>
+    
+    
+    <!-- needs proper links and text -->
+    <div class="section page-selector">
+      <div class="slide">
+        <a href="#">
+          <h1>Page Title 1</h1>
+          <p>
+            <!-- text here -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            recusandae provident nam accusantium quia commodi similique
+            explicabo voluptatibus blanditiis natus? Nisi corrupti eum
+            perferendis in debitis facilis omnis, explicabo libero.
+          </p>
+        </a>
+      </div>
+      <div class="slide">
+        <a href="#">
+          <h1>Page Title 2</h1>
+          <p>
+            <!-- text here -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            recusandae provident nam accusantium quia commodi similique
+            explicabo voluptatibus blanditiis natus? Nisi corrupti eum
+            perferendis in debitis facilis omnis, explicabo libero.
+          </p>
+        </a>
+      </div>
+      <div class="slide">
+        <a href="#">
+          <h1>Page Title 3</h1>
+          <p>
+            <!-- text here -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            recusandae provident nam accusantium quia commodi similique
+            explicabo voluptatibus blanditiis natus? Nisi corrupti eum
+            perferendis in debitis facilis omnis, explicabo libero.
+          </p>
+        </a>
+      </div>
+      <div class="slide">
+        <a href="#">
+          <h1>Page Title 4</h1>
+          <p>
+            <!-- text here -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            recusandae provident nam accusantium quia commodi similique
+            explicabo voluptatibus blanditiis natus? Nisi corrupti eum
+            perferendis in debitis facilis omnis, explicabo libero.
+          </p>
+        </a>
+      </div>
+      <span
+        class="material-symbols-outlined arrow back"
+        onclick="changeslide(-1)"
+      >
+        arrow_back
+      </span>
+      <span
+        class="material-symbols-outlined arrow forward"
+        onclick="changeslide(1)"
+      >
+        arrow_forward
+      </span>
+    </div>
+
+    <div class="section footer">
+      <div class="form">
+        <form>
+          <input type="text" id="email" name="email" placeholder="email:">
+          <input type="submit" value="submit">
+        </form>
+      </div>
+      <div class="socials">
+        <!-- put social media links and images here-->
+        <a href="#" class="social-logo"><img src="https://placehold.co/500x500"></a>
+        <a href="#" class="social-logo"><img src="https://placehold.co/500x500"></a>
+        <a href="#" class="social-logo"><img src="https://placehold.co/500x500"></a>
+        <a href="#" class="social-logo"><img src="https://placehold.co/500x500"></a>
+      </div>
+    </div>
+
+    <script>
+      let slideIndex = 1;
+      changeslide(0);
+      dropdown.style.display = "none";
+    </script>
+  </body>
+</html>
