@@ -41,3 +41,15 @@ function changeslide(newslide){
   slides(slideIndex+=newslide);
 }
 
+function slideHeight(){
+  let slides = document.getElementsByClassName("slide");
+  largestHeight = 0;
+  for(i = 0; i < slides.length; i++){
+    if(slides[i].offsetHeight > largestHeight){
+      largestHeight = slides[i].offsetHeight;
+    }
+  }
+  for(i = 0; i < slides.length; i++){
+    slides[i].style.minHeight = (largestHeight + 20) + "px";
+  }
+}

@@ -189,20 +189,22 @@ img{
 }
 
 .back{
-    left: 6%;
+    left: 20px;
     
 }
 
 .forward{
-    right: 6%;
+    right: 20px;
 }
 
 .caption{
     color: var(--bg);
+    text-align: center;
+    width: 70%;
+    margin: 0 15%;
     position: absolute;
-    top: 47%;
-    width: 50%;
-    left: 30%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .section{
@@ -213,31 +215,28 @@ img{
     border-radius: 10px;
 }
 
-.page-selector{
-    min-height: 300px;
-}
-
 .slide{
     color: var(--text);
     text-align: center;
     margin: 0px;
     text-decoration: none;
+    height: max-content;
 }
 
 .slide h1{
-    padding: 50px 0;
     color: var(--text);
     text-transform: capitalize;
+    padding: 10px 60px;
 }
 
 .slide p{
-    margin: 0 20%;
-    padding: 0 0 50px 0;
     color: var(--text);
+    padding: 0 60px;
 }
 
 .slide a{
     text-decoration: none;
+    
 }
 
 .page-selector .fade {
@@ -284,8 +283,10 @@ img{
 }
 
 .socials img{
-    width:50px;
-    height: 50px;
+    width:40px;
+    height: 40px;
+    border-radius: 10px;
+    filter: brightness(90%);
 }
 
 .index-info{
@@ -297,7 +298,8 @@ img{
 
 .index-info img{
     width: 30vw;
-    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .history{
