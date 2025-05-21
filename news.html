@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body onresize="slideHeight()">
 
     <!-- navbar -->
     <div class="navbar-container">
@@ -72,16 +72,17 @@
     <!-- the news info section -->
     <!-- needs links and proper text and images -->
     <div class="section news">
-      <a class="article featured" href="#">
+      <!-- find the links in the word doc cole sent, we need 10 articles-->
+      <a class="article featured" href="#"> <!-- link to the article -->
         <img src="img/news/1-edinburgh-gov-gas-park.jpeg" alt="news image" />
         <div class="news-text">
           <p style="font-style: italic;"> featured </p>
-          <h2> Lighting Up the Skyline: Fireworks at the Granton Gas Holder</h2>
+          <h2> Lighting Up the Skyline: Fireworks at the Granton Gas Holder</h2> <!-- put the proper title from the article -->
           <p>A dazzling display of fireworks lit up the night sky above 
             the Granton Gas Holder, celebrating its place at the heart 
             of Edinburgh’s waterfront transformation. The event drew 
             crowds from across the city, marking a powerful moment of 
-            pride, history, and community connection.</p>
+            pride, history, and community connection.</p> <!-- first paragraph of article -->
         </div>
       </a>
       
@@ -96,7 +97,7 @@
         </div>
       </a>
       <a class="article regular-article" href="#">
-        <img src="img/news/7-edinburgh-reporter-illuminated.png" alt="news image" />
+        <img src="img/news/3-nen-press-the-bell.jpeg" alt="news image" />
         <div class="news-text">
           <h2>Subtle Glow: Granton Gas Holder with Illuminated Lettering</h2>
           <p>Though modest in size, 
@@ -116,7 +117,7 @@
       </a>
       <!-- Copy from here -->
       <a class="article regular-article" href="#">
-        <img src="img/news/6-bbc-new-life.png" alt="news image" />
+        <img src="img/news/5-msn-new-park.png" alt="news image" />
         <div class="news-text">
           <h2> Industrial Meets Art: Granton Gas Holder and Crystal Sculpture</h2>
           <p>The reflective surface of the statue mirrors the structure’s 
@@ -126,6 +127,41 @@
         </div>
       </a>
       <!-- to here to add another article -->
+       <a class="article regular-article" href="#">
+        <img src="img/news/6-bbc-new-life.png" alt="news image" />
+        <div class="news-text">
+          <h2> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident dicta aliquam architecto commodi quos mollitia ab distinctio explicabo amet ut nam assumenda sint velit nihil nesciunt, maiores debitis natus fugiat.</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus consequuntur iusto porro rerum accusamus, laboriosam dolor pariatur earum incidunt fuga dignissimos minus? Ad, laudantium. Ab dignissimos sunt deleniti ducimus hic. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, maiores. Sit quod quia atque nobis a, modi, recusandae corporis hic officiis impedit facere commodi quam placeat eveniet, libero ipsum cumque.</p>
+        </div>
+      </a>
+      <a class="article regular-article" href="#">
+        <img src="img/news/7-edinburgh-reporter-illuminated.png" alt="news image" />
+        <div class="news-text">
+          <h2> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti necessitatibus a esse pariatur maxime, tempora magni aspernatur ea, voluptas, nobis cumque dolorem ratione labore veritatis ad soluta est dolores ipsam?</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sint odit a culpa similique fugiat ipsum consequatur officiis architecto fuga exercitationem, eligendi minus necessitatibus commodi laudantium neque? Blanditiis, eius repudiandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti perspiciatis aspernatur dicta dolore at! Cumque, perspiciatis consequatur incidunt tenetur provident quis quae facere reprehenderit porro. Inventore exercitationem aliquam omnis repellendus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime asperiores illo aperiam consequatur odio ad architecto? Atque dolore suscipit amet hic assumenda totam velit ex odio ratione magnam, animi quibusdam.</p>
+        </div>
+      </a>
+      <a class="article regular-article" href="#">
+        <img src="img/news/8-herald-milestone copy.png" alt="news image" />
+        <div class="news-text">
+          <h2> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti necessitatibus a esse pariatur maxime, tempora magni aspernatur ea, voluptas, nobis cumque dolorem ratione labore veritatis ad soluta est dolores ipsam?</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti necessitatibus a esse pariatur maxime, tempora magni aspernatur ea, voluptas, nobis cumque dolorem ratione labore veritatis ad soluta est dolores ipsam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti necessitatibus a esse pariatur maxime, tempora magni aspernatur ea, voluptas, nobis cumque dolorem ratione labore veritatis ad soluta est dolores ipsam?</p>
+        </div>
+      </a>
+      <a class="article regular-article" href="#">
+        <img src="img/news/9-nen-new-park.png" alt="news image" />
+        <div class="news-text">
+          <h2> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti necessitatibus a esse pariatur maxime, tempora magni aspernatur ea, voluptas, nobis cumque dolorem ratione labore veritatis ad soluta est dolores ipsam?</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti necessitatibus a esse pariatur maxime, tempora magni aspernatur ea, voluptas, nobis cumque dolorem ratione labore veritatis ad soluta est dolores ipsam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti necessitatibus a esse pariatur maxime, tempora magni aspernatur ea, voluptas, nobis cumque dolorem ratione labore veritatis ad soluta est dolores ipsam?</p>
+        </div>
+      </a>
+      <a class="article regular-article" href="#">
+        <img src="img/news/10-nen-latest-stage.png" alt="news image" />
+        <div class="news-text">
+          <h2> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti necessitatibus a esse pariatur maxime, tempora magni aspernatur ea, voluptas, nobis cumque dolorem ratione labore veritatis ad soluta est dolores ipsam?</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti necessitatibus a esse pariatur maxime, tempora magni aspernatur ea, voluptas, nobis cumque dolorem ratione labore veritatis ad soluta est dolores ipsam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti necessitatibus a esse pariatur maxime, tempora magni aspernatur ea, voluptas, nobis cumque dolorem ratione labore veritatis ad soluta est dolores ipsam?</p>
+        </div>
+      </a>
     </div>
     
 <!-- footer / page selector-->
