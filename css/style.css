@@ -64,6 +64,7 @@ img{
     align-content: center;
     justify-content: space-between;
     margin: 0px 3px;
+    text-transform: capitalize;
 }
 
 .logo{
@@ -226,6 +227,7 @@ img{
 .slide h1{
     padding: 50px 0;
     color: var(--text);
+    text-transform: capitalize;
 }
 
 .slide p{
@@ -236,6 +238,20 @@ img{
 
 .slide a{
     text-decoration: none;
+}
+
+.page-selector .fade {
+    animation-name: page-select-fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes page-select-fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .form{
@@ -263,7 +279,8 @@ img{
 .socials{
     display: flex;
     justify-content: space-evenly;
-    margin: 10px 0 0 0;
+    margin: 10px 0;
+    padding: 5px;
 }
 
 .socials img{
