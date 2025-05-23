@@ -27,6 +27,20 @@ function changeimgslide(newslide) {
   slides(imgslideIndex += newslide);
 }
 
+function autoSlides(){
+  let i;
+  let slides = document.getElementsByClassName("img-slide");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  imgslideIndex++;
+  if (imgslideIndex > slides.length) {imgslideIndex = 1}
+  slides[imgslideIndex-1].style.display = "block";
+
+  setTimeout(autoSlides, 5000);
+}
+
 
 function changeslide(newslide) {
   function slides(newslide) {
