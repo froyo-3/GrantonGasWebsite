@@ -41,11 +41,11 @@ function changeslide(newslide){
   slides(slideIndex+=newslide);
 }
 
-function slideHeight(largestHeight){
+function slideHeight(){
   let slides = document.getElementsByClassName("slide");
   largestHeight = 0;
   for(i = 0; i < slides.length; i++){
-    slides[i].style.minHeight = "";
+    slides[i].style.height = "";
   }
   for(i = 0; i < slides.length; i++){
     if(slides[i].offsetHeight > largestHeight){
@@ -53,6 +53,6 @@ function slideHeight(largestHeight){
     }
   }
   for(i = 0; i < slides.length; i++){
-    slides[i].style.minHeight = (largestHeight + 30) + "px";
+    slides[i].style.height = (largestHeight + 50) + "px";
   }
 }
