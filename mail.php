@@ -1,5 +1,5 @@
 <?php
-	$to = "ec1829613@edinburghcollege.ac.uk";//change email address - should be client but use a student email for testing
+	$to = "ec1829613@edinburghcollege.ac.uk"; //change email address - should be client but use a student email for testing
 	$subject = "Enquiry";
 	$name = $_POST['name'];
 	$email_field = $_POST['email'];
