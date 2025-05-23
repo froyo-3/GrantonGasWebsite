@@ -460,6 +460,7 @@ img{
     border-radius: 10px;
     border: 1px solid black;
     padding: 10px;
+    font-family: "Jost", sans-serif;
 }
 .contact-form textarea{
     width: 90%;
@@ -467,6 +468,7 @@ img{
     border: 1px solid black;
     padding: 10px;
     resize: vertical;
+    font-family: "Jost", sans-serif;
 }
 .contact-form input[type=submit]{
     width: 100px;
