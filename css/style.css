@@ -210,9 +210,11 @@ img{
     text-align: center;
     width: 70%;
     margin: 0 15%;
+    padding: 10px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    vertical-align: middle;
 }
 
 .section{
