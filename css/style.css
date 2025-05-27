@@ -13,7 +13,6 @@
 
 .jost {
     font-family: "Jost", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
 }
@@ -418,7 +417,7 @@ img {
 }
 
 .gallery-item {
-    width: 100%;
+    width: calc(100% - 10px);
     height: min-content;
     position: relative;
     cursor: pointer;
