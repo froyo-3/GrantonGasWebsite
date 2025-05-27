@@ -190,6 +190,7 @@ img {
     color: var(--bg);
     padding: 10px;
     z-index: 0;
+    vertical-align: middle;
 }
 
 .page-selector .arrow {
