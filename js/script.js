@@ -2,31 +2,34 @@
 function OpenDropdown() {
   if (dropdown.style.display === "none") {
     dropdown.style.display = "flex";
-  }
-  else {
+  } else {
     dropdown.style.display = "none";
   }
   window.onclick = function (event) {
-    if (!event.target.closest('.dropdown-button')) {
+    if (!event.target.closest(".dropdown-button")) {
       if (dropdown.style.display === "flex") {
         dropdown.style.display = "none";
       }
     }
-  }
-};
+  };
+}
 
 // image carosel functionality
 function changeimgslide(newslide) {
   function slides(newslide) {
     slides = document.getElementsByClassName("img-slide");
-    if (newslide > slides.length) { imgslideIndex = 1 }
-    if (newslide < 1) { imgslideIndex = slides.length }
+    if (newslide > slides.length) {
+      imgslideIndex = 1;
+    }
+    if (newslide < 1) {
+      imgslideIndex = slides.length;
+    }
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     }
     slides[imgslideIndex - 1].style.display = "block";
   }
-  slides(imgslideIndex += newslide);
+  slides((imgslideIndex += newslide));
 }
 
 // automatic switching of slides
@@ -38,7 +41,9 @@ function autoSlides() {
   }
 
   imgslideIndex++;
-  if (imgslideIndex > slides.length) { imgslideIndex = 1 }
+  if (imgslideIndex > slides.length) {
+    imgslideIndex = 1;
+  }
   slides[imgslideIndex - 1].style.display = "block";
 
   setTimeout(autoSlides, 5000);
@@ -48,14 +53,18 @@ function autoSlides() {
 function changeslide(newslide) {
   function slides(newslide) {
     slides = document.getElementsByClassName("slide");
-    if (newslide > slides.length) { slideIndex = 1 }
-    if (newslide < 1) { slideIndex = slides.length }
+    if (newslide > slides.length) {
+      slideIndex = 1;
+    }
+    if (newslide < 1) {
+      slideIndex = slides.length;
+    }
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     }
     slides[slideIndex - 1].style.display = "block";
   }
-  slides(slideIndex += newslide);
+  slides((slideIndex += newslide));
 }
 
 // makes page selector slides all the same height bcos css is useless
@@ -71,6 +80,6 @@ function slideHeight() {
     }
   }
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.height = (largestHeight + 50) + "px";
+    slides[i].style.height = largestHeight + 50 + "px";
   }
 }

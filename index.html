@@ -1,273 +1,301 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+    <title>Home | Granton Gas</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=arrow_back,arrow_forward,art_track,history_edu,mail,menu,newspaper,pin_drop,videocam"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js"></script>
-  <title>Home | Granton Gas</title>
-  <link rel="icon" type="image/x-icon" href="/img/favicon.png">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=arrow_back,arrow_forward,art_track,history_edu,mail,menu,newspaper,pin_drop,videocam"
-    rel="stylesheet">
-</head>
-
-<body onresize="slideHeight()">
-  <!--navbar -->
-  <div class="navbar-container">
-    <div class="navbar-content">
-      <div class="logo">
-        <a href="/"><img src="img/logo.png" alt="logo"></a>
-      </div>
-      <div class="title">Home</div>
-      <div class="dropdown">
-        <div class="desktop-links">
-          <a href="/history.html">
-            <span class="material-symbols-outlined"> history_edu </span>
-            History
-          </a>
-          <a href="/news.html">
-            <span class="material-symbols-outlined"> newspaper </span>
-            News
-          </a>
-          <a href="/gallery.html">
-            <span class="material-symbols-outlined"> art_track </span>
-            Gallery
-          </a>
+  <body onresize="slideHeight()">
+    <!--navbar -->
+    <div class="navbar-container">
+      <div class="navbar-content">
+        <div class="logo">
+          <a href="/"><img src="img/logo.png" alt="logo" /></a>
         </div>
-        <span class="dropdown-button" onclick="OpenDropdown()">
-          <span class="material-symbols-outlined"> menu </span>
-        </span>
-        <div class="dropdown-content" id="dropdown">
-          <a class="desktop-hide" href="/history.html">
-            <span class="material-symbols-outlined"> history_edu </span>
-            History
-          </a>
-          <a class="desktop-hide" href="/news.html">
-            <span class="material-symbols-outlined"> newspaper </span>
-            News
-          </a>
-          <a class="desktop-hide" href="/gallery.html">
-            <span class="material-symbols-outlined"> art_track </span>
-            Gallery
-          </a>
-          <a href="/live.html">
-            <span class="material-symbols-outlined"> videocam </span>
-            Livestream
-          </a>
-          <a href="/location.html">
-            <span class="material-symbols-outlined"> pin_drop </span>
-            Find Us
-          </a>
-          <a href="/contact.html">
-            <span class="material-symbols-outlined"> mail </span>
-            Contact
-          </a>
+        <div class="title">Home</div>
+        <div class="dropdown">
+          <div class="desktop-links">
+            <a href="/history.html">
+              <span class="material-symbols-outlined"> history_edu </span>
+              History
+            </a>
+            <a href="/news.html">
+              <span class="material-symbols-outlined"> newspaper </span>
+              News
+            </a>
+            <a href="/gallery.html">
+              <span class="material-symbols-outlined"> art_track </span>
+              Gallery
+            </a>
+          </div>
+          <span class="dropdown-button" onclick="OpenDropdown()">
+            <span class="material-symbols-outlined"> menu </span>
+          </span>
+          <div class="dropdown-content" id="dropdown">
+            <a class="desktop-hide" href="/history.html">
+              <span class="material-symbols-outlined"> history_edu </span>
+              History
+            </a>
+            <a class="desktop-hide" href="/news.html">
+              <span class="material-symbols-outlined"> newspaper </span>
+              News
+            </a>
+            <a class="desktop-hide" href="/gallery.html">
+              <span class="material-symbols-outlined"> art_track </span>
+              Gallery
+            </a>
+            <a href="/live.html">
+              <span class="material-symbols-outlined"> videocam </span>
+              Livestream
+            </a>
+            <a href="/location.html">
+              <span class="material-symbols-outlined"> pin_drop </span>
+              Find Us
+            </a>
+            <a href="/contact.html">
+              <span class="material-symbols-outlined"> mail </span>
+              Contact
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- image carosel -->
-  <div class="carosel">
-    <div class="img-slide fade">
-      <img class="image" src="img/index/1-carosel.jpeg" alt="Granton Gas Holder">
-      <h1 class="caption">
-        Granton Gas Holder illuminated by fireworks
-      </h1>
+    <!-- image carosel -->
+    <div class="carosel">
+      <div class="img-slide fade">
+        <img
+          class="image"
+          src="img/index/1-carosel.jpeg"
+          alt="Granton Gas Holder"
+        />
+        <h1 class="caption">Granton Gas Holder illuminated by fireworks</h1>
+      </div>
+      <div class="img-slide fade">
+        <img
+          class="image"
+          src="img/index/2-carosel.png"
+          alt="Granton Gas Holder"
+        />
+        <h1 class="caption">
+          The Granton Gas Holder transformed by laser lights
+        </h1>
+      </div>
+      <div class="img-slide fade">
+        <img
+          class="image"
+          src="img/index/3-carosel.png"
+          alt="Granton Gas Holder"
+        />
+        <h1 class="caption">
+          The Granton Gas Holder glowing in vibrant lighting
+        </h1>
+      </div>
+      <!-- Copy from here -->
+      <div class="img-slide fade">
+        <img
+          class="image"
+          src="img/index/4-carosel.jpeg"
+          alt="Granton Gas Holder"
+        />
+        <h1 class="caption">The Granton Gas Holder at night</h1>
+      </div>
+      <!-- to here to add another -->
+      <span
+        class="material-symbols-outlined arrow back"
+        onclick="changeimgslide(-1)"
+      >
+        arrow_back
+      </span>
+      <span
+        class="material-symbols-outlined arrow forward"
+        onclick="changeimgslide(1)"
+      >
+        arrow_forward
+      </span>
     </div>
-    <div class="img-slide fade">
-      <img class="image" src="img/index/2-carosel.png" alt="Granton Gas Holder">
-      <h1 class="caption">
-        The Granton Gas Holder transformed by laser lights
-      </h1>
-    </div>
-    <div class="img-slide fade">
-      <img class="image" src="img/index/3-carosel.png" alt="Granton Gas Holder">
-      <h1 class="caption">
-        The Granton Gas Holder glowing in vibrant lighting
-      </h1>
-    </div>
-    <!-- Copy from here -->
-    <div class="img-slide fade">
-      <img class="image" src="img/index/4-carosel.jpeg" alt="Granton Gas Holder">
-      <h1 class="caption">
-        The Granton Gas Holder at night
-      </h1>
-    </div>
-    <!-- to here to add another -->
-    <span class="material-symbols-outlined arrow back" onclick="changeimgslide(-1)">
-      arrow_back
-    </span>
-    <span class="material-symbols-outlined arrow forward" onclick="changeimgslide(1)">
-      arrow_forward
-    </span>
-  </div>
 
-  <!-- the info that shows up on the main page-->
-  <div class="section index-info">
-    <div>
-      <h2>Welcome to the Granton Gas Holder Project</h2>
-      <p>
-        Where industrial heritage meets creative vision. Rising above the
-        northern edge of Edinburgh, the Granton Gas Holder is one of the
-        city’s most iconic and enduring structures — a powerful symbol of
-        Scotland’s industrial history, community pride, and ongoing
-        regeneration. Built in 1903 as part of the once-thriving Granton
-        Gasworks, the gas holder originally served as a crucial part of the
-        city’s energy infrastructure, storing gas to power homes,
-        streetlights, and industries throughout the capital. Today, while its
-        original function has ceased, the structure stands tall — repurposed
-        in spirit and embraced as a cultural landmark. This website celebrates
-        not only the gas holder’s fascinating past, but its vibrant present
-        and promising future. At the heart of a £1.3 billion regeneration
-        project led by the City of Edinburgh Council, the gas holder is being
-        preserved and reimagined as a centrepiece of the redeveloped Granton
-        waterfront. The transformation includes new housing, green spaces,
-        community facilities, and cultural venues — all designed to honour the
-        area’s heritage while creating new opportunities for the people of
-        Edinburgh. A key part of this journey has involved students from
-        Edinburgh College, who have brought the structure to life through
-        creative multimedia projects, including lighting installations, laser
-        shows, photography, and video work. Their contributions have helped
-        raise awareness of the gas holder’s importance, engaging the public
-        with a fresh perspective on this historic site.
-      </p>
+    <!-- the info that shows up on the main page-->
+    <div class="section index-info">
+      <div>
+        <h2>Welcome to the Granton Gas Holder Project</h2>
+        <p>
+          Where industrial heritage meets creative vision. Rising above the
+          northern edge of Edinburgh, the Granton Gas Holder is one of the
+          city’s most iconic and enduring structures — a powerful symbol of
+          Scotland’s industrial history, community pride, and ongoing
+          regeneration. Built in 1903 as part of the once-thriving Granton
+          Gasworks, the gas holder originally served as a crucial part of the
+          city’s energy infrastructure, storing gas to power homes,
+          streetlights, and industries throughout the capital. Today, while its
+          original function has ceased, the structure stands tall — repurposed
+          in spirit and embraced as a cultural landmark. This website celebrates
+          not only the gas holder’s fascinating past, but its vibrant present
+          and promising future. At the heart of a £1.3 billion regeneration
+          project led by the City of Edinburgh Council, the gas holder is being
+          preserved and reimagined as a centrepiece of the redeveloped Granton
+          waterfront. The transformation includes new housing, green spaces,
+          community facilities, and cultural venues — all designed to honour the
+          area’s heritage while creating new opportunities for the people of
+          Edinburgh. A key part of this journey has involved students from
+          Edinburgh College, who have brought the structure to life through
+          creative multimedia projects, including lighting installations, laser
+          shows, photography, and video work. Their contributions have helped
+          raise awareness of the gas holder’s importance, engaging the public
+          with a fresh perspective on this historic site.
+        </p>
+      </div>
+      <img src="img/index/1-info.jpeg" alt="Granton Gas Holder" />
     </div>
-    <img src="img/index/1-info.jpeg" alt="Granton Gas Holder">
-  </div>
 
-  <!-- footer / page selector-->
-  <div class="section page-selector">
-    <div class="slide fade">
-      <a href="/">
-        <h1>The Granton Gas Holder Project</h1>
-        <p>
-          Discover the heart of Edinburgh’s waterfront transformation. At the
-          centre of a £1.3 billion regeneration of the Granton waterfront, the
-          Granton Gas Holder stands as a powerful symbol of Edinburgh’s
-          industrial heritage and bright future. This iconic structure,
-          recently brought to life through a series of innovative lighting
-          installations and creative multimedia events by talented Edinburgh
-          College students, is more than just a landmark — it’s a celebration
-          of community, history, and creative vision.
-        </p>
-      </a>
+    <!-- footer / page selector-->
+    <div class="section page-selector">
+      <div class="slide fade">
+        <a href="/">
+          <h1>The Granton Gas Holder Project</h1>
+          <p>
+            Discover the heart of Edinburgh’s waterfront transformation. At the
+            centre of a £1.3 billion regeneration of the Granton waterfront, the
+            Granton Gas Holder stands as a powerful symbol of Edinburgh’s
+            industrial heritage and bright future. This iconic structure,
+            recently brought to life through a series of innovative lighting
+            installations and creative multimedia events by talented Edinburgh
+            College students, is more than just a landmark — it’s a celebration
+            of community, history, and creative vision.
+          </p>
+        </a>
+      </div>
+      <div class="slide fade">
+        <a href="/history.html">
+          <h1>The History of the Granton Gas Holder</h1>
+          <p>
+            From industrial powerhouse to cultural landmark. The Granton Gas
+            Holder has stood proudly on Edinburgh’s northern shoreline for over
+            a century, a striking reminder of the city’s industrial past and
+            engineering prowess. Constructed in 1903, the gas holder was once
+            part of the Granton Gasworks, a vital facility that provided gas for
+            homes, businesses, and street lighting across Edinburgh.
+          </p>
+        </a>
+      </div>
+      <div class="slide fade">
+        <a href="/news.html">
+          <h1>Latest News & Updates</h1>
+          <p>
+            Stay informed with the latest developments around the Granton Gas
+            Holder project. This section is your go-to source for news,
+            announcements, and behind-the-scenes updates about the Granton Gas
+            Holder and the wider regeneration of the Granton waterfront. From
+            lighting events and student showcases to milestones in the £1.3bn
+            redevelopment, this is where the story continues to unfold.
+          </p>
+        </a>
+      </div>
+      <div class="slide fade">
+        <a href="/gallery.html">
+          <h1>Illuminating the Granton Gas Holder</h1>
+          <p>
+            A visual journey through heritage, creativity, and transformation.
+            Step into the story of the Granton Gas Holder through a curated
+            selection of high-quality images and dynamic multimedia content that
+            captures the beauty, scale, and spirit of this iconic Edinburgh
+            landmark.
+          </p>
+        </a>
+      </div>
+      <div class="slide fade">
+        <a href="/live.html">
+          <h1>Live: Granton Gas Holder in Real Time</h1>
+          <p>
+            Experience the Granton Gas Holder — anytime, anywhere. Watch the
+            iconic Granton Gas Holder as it stands today — live and in real
+            time. Whether you’re nearby or across the globe, this live video
+            stream gives you a front-row view of one of Edinburgh’s most
+            striking landmarks, 24/7.
+          </p>
+        </a>
+      </div>
+      <div class="slide fade">
+        <a href="/location.html">
+          <h1>Visit the Granton Gas Holder</h1>
+          <p>
+            Find your way to one of Edinburgh’s most iconic landmarks. Located
+            on the northern edge of Edinburgh, the Granton Gas Holder sits at
+            the heart of a major urban transformation — the £1.3 billion Granton
+            waterfront regeneration project. With its towering steel frame and
+            striking presence, the gas holder is a must-see destination for
+            locals, visitors, and history enthusiasts alike.
+          </p>
+        </a>
+      </div>
+      <!-- Copy from here -->
+      <div class="slide fade">
+        <a href="/contact.html">
+          <h1>Contact us, We’d love to hear from you.</h1>
+          <p>
+            Whether you have questions about the Granton Gas Holder project,
+            want to get involved, or have media or collaboration enquiries, our
+            team is here to help.
+          </p>
+        </a>
+      </div>
+      <!-- to here to add another -->
+      <span
+        class="material-symbols-outlined arrow back"
+        onclick="changeslide(-1)"
+      >
+        arrow_back
+      </span>
+      <span
+        class="material-symbols-outlined arrow forward"
+        onclick="changeslide(1)"
+      >
+        arrow_forward
+      </span>
     </div>
-    <div class="slide fade">
-      <a href="/history.html">
-        <h1>The History of the Granton Gas Holder</h1>
-        <p>
-          From industrial powerhouse to cultural landmark. The Granton Gas
-          Holder has stood proudly on Edinburgh’s northern shoreline for over
-          a century, a striking reminder of the city’s industrial past and
-          engineering prowess. Constructed in 1903, the gas holder was once
-          part of the Granton Gasworks, a vital facility that provided gas for
-          homes, businesses, and street lighting across Edinburgh.
-        </p>
-      </a>
-    </div>
-    <div class="slide fade">
-      <a href="/news.html">
-        <h1>Latest News & Updates</h1>
-        <p>
-          Stay informed with the latest developments around the Granton Gas
-          Holder project. This section is your go-to source for news,
-          announcements, and behind-the-scenes updates about the Granton Gas
-          Holder and the wider regeneration of the Granton waterfront. From
-          lighting events and student showcases to milestones in the £1.3bn
-          redevelopment, this is where the story continues to unfold.
-        </p>
-      </a>
-    </div>
-    <div class="slide fade">
-      <a href="/gallery.html">
-        <h1>Illuminating the Granton Gas Holder</h1>
-        <p>
-          A visual journey through heritage, creativity, and transformation.
-          Step into the story of the Granton Gas Holder through a curated
-          selection of high-quality images and dynamic multimedia content that
-          captures the beauty, scale, and spirit of this iconic Edinburgh
-          landmark.
-        </p>
-      </a>
-    </div>
-    <div class="slide fade">
-      <a href="/live.html">
-        <h1>Live: Granton Gas Holder in Real Time</h1>
-        <p>
-          Experience the Granton Gas Holder — anytime, anywhere. Watch the
-          iconic Granton Gas Holder as it stands today — live and in real
-          time. Whether you’re nearby or across the globe, this live video
-          stream gives you a front-row view of one of Edinburgh’s most
-          striking landmarks, 24/7.
-        </p>
-      </a>
-    </div>
-    <div class="slide fade">
-      <a href="/location.html">
-        <h1>Visit the Granton Gas Holder</h1>
-        <p>
-          Find your way to one of Edinburgh’s most iconic landmarks. Located
-          on the northern edge of Edinburgh, the Granton Gas Holder sits at
-          the heart of a major urban transformation — the £1.3 billion Granton
-          waterfront regeneration project. With its towering steel frame and
-          striking presence, the gas holder is a must-see destination for
-          locals, visitors, and history enthusiasts alike.
-        </p>
-      </a>
-    </div>
-    <!-- Copy from here -->
-    <div class="slide fade">
-      <a href="/contact.html">
-        <h1>Contact us, We’d love to hear from you.</h1>
-        <p>
-          Whether you have questions about the Granton Gas Holder project,
-          want to get involved, or have media or collaboration enquiries, our
-          team is here to help.
-        </p>
-      </a>
-    </div>
-    <!-- to here to add another -->
-    <span class="material-symbols-outlined arrow back" onclick="changeslide(-1)">
-      arrow_back
-    </span>
-    <span class="material-symbols-outlined arrow forward" onclick="changeslide(1)">
-      arrow_forward
-    </span>
-  </div>
 
-  <!-- email and socials-->
-  <div class="section footer">
-    <div class="form">
-      <form>
-        <input type="text" id="email" name="email" placeholder="email:">
-        <input type="submit" value="submit">
-      </form>
+    <!-- email and socials-->
+    <div class="section footer">
+      <div class="form">
+        <form>
+          <input type="text" id="email" name="email" placeholder="email:" />
+          <input type="submit" value="submit" />
+        </form>
+      </div>
+      <div class="socials">
+        <!-- put social media links and images here-->
+        <a href="https://tiktok.com/" class="social-logo"
+          ><img src="img/social_media_icons/Tik_Tok_Logo.jpg" alt="tiktok"
+        /></a>
+        <a href="https://facebook.com/" class="social-logo"
+          ><img src="img/social_media_icons/Facebook_Logo.jpg" alt="facebook"
+        /></a>
+        <a href="https://instagram.com/" class="social-logo"
+          ><img src="img/social_media_icons/Instagram_Logo.jpg" alt="instagram"
+        /></a>
+        <a href="https://twitter.com/" class="social-logo"
+          ><img src="img/social_media_icons/X_Logo.jpg" alt="X"
+        /></a>
+      </div>
     </div>
-    <div class="socials">
-      <!-- put social media links and images here-->
-      <a href="https://tiktok.com/" class="social-logo"><img src="img/social_media_icons/Tik_Tok_Logo.jpg"
-          alt="tiktok"></a>
-      <a href="https://facebook.com/" class="social-logo"><img src="img/social_media_icons/Facebook_Logo.jpg"
-          alt="facebook"></a>
-      <a href="https://instagram.com/" class="social-logo"><img src="img/social_media_icons/Instagram_Logo.jpg"
-          alt="instagram"></a>
-      <a href="https://twitter.com/" class="social-logo"><img src="img/social_media_icons/X_Logo.jpg" alt="X"></a>
-    </div>
-  </div>
 
-  <!-- js stuff -->
-  <script>
-    slideHeight()
-    let imgslideIndex = 0;
-    autoSlides()
-    let slideIndex = 1;
-    changeslide(1);
-    dropdown.style.display = "none";
-  </script>
-</body>
-
+    <!-- js stuff -->
+    <script>
+      slideHeight();
+      let imgslideIndex = 0;
+      autoSlides();
+      let slideIndex = 1;
+      changeslide(1);
+      dropdown.style.display = "none";
+    </script>
+  </body>
 </html>

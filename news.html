@@ -1,317 +1,404 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+    <title>News | Granton Gas</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=arrow_back,arrow_forward,art_track,history_edu,mail,menu,newspaper,pin_drop,videocam"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js"></script>
-  <title>News | Granton Gas</title>
-  <link rel="icon" type="image/x-icon" href="/img/favicon.png">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=arrow_back,arrow_forward,art_track,history_edu,mail,menu,newspaper,pin_drop,videocam"
-    rel="stylesheet">
-</head>
-
-<body onresize="slideHeight()">
-
-  <!-- navbar -->
-  <div class="navbar-container">
-    <div class="navbar-content">
-      <div class="logo">
-        <a href="/"><img src="img/logo.png" alt="logo"></a>
-      </div>
-      <div class="title">News</div>
-      <div class="dropdown">
-        <div class="desktop-links">
-          <a href="/history.html">
-            <span class="material-symbols-outlined"> history_edu </span>
-            History
-          </a>
-          <a href="/news.html">
-            <span class="material-symbols-outlined"> newspaper </span>
-            News
-          </a>
-          <a href="/gallery.html">
-            <span class="material-symbols-outlined"> art_track </span>
-            Gallery
-          </a>
+  <body onresize="slideHeight()">
+    <!-- navbar -->
+    <div class="navbar-container">
+      <div class="navbar-content">
+        <div class="logo">
+          <a href="/"><img src="img/logo.png" alt="logo" /></a>
         </div>
-        <span class="dropdown-button" onclick="OpenDropdown()">
-          <span class="material-symbols-outlined"> menu </span>
-        </span>
-        <div class="dropdown-content" id="dropdown">
-          <a class="desktop-hide" href="/history.html">
-            <span class="material-symbols-outlined"> history_edu </span>
-            History
-          </a>
-          <a class="desktop-hide" href="/news.html">
-            <span class="material-symbols-outlined"> newspaper </span>
-            News
-          </a>
-          <a class="desktop-hide" href="/gallery.html">
-            <span class="material-symbols-outlined"> art_track </span>
-            Gallery
-          </a>
-          <a href="/live.html">
-            <span class="material-symbols-outlined"> videocam </span>
-            Livestream
-          </a>
-          <a href="/location.html">
-            <span class="material-symbols-outlined"> pin_drop </span>
-            Find Us
-          </a>
-          <a href="/contact.html">
-            <span class="material-symbols-outlined"> mail </span>
-            Contact
-          </a>
+        <div class="title">News</div>
+        <div class="dropdown">
+          <div class="desktop-links">
+            <a href="/history.html">
+              <span class="material-symbols-outlined"> history_edu </span>
+              History
+            </a>
+            <a href="/news.html">
+              <span class="material-symbols-outlined"> newspaper </span>
+              News
+            </a>
+            <a href="/gallery.html">
+              <span class="material-symbols-outlined"> art_track </span>
+              Gallery
+            </a>
+          </div>
+          <span class="dropdown-button" onclick="OpenDropdown()">
+            <span class="material-symbols-outlined"> menu </span>
+          </span>
+          <div class="dropdown-content" id="dropdown">
+            <a class="desktop-hide" href="/history.html">
+              <span class="material-symbols-outlined"> history_edu </span>
+              History
+            </a>
+            <a class="desktop-hide" href="/news.html">
+              <span class="material-symbols-outlined"> newspaper </span>
+              News
+            </a>
+            <a class="desktop-hide" href="/gallery.html">
+              <span class="material-symbols-outlined"> art_track </span>
+              Gallery
+            </a>
+            <a href="/live.html">
+              <span class="material-symbols-outlined"> videocam </span>
+              Livestream
+            </a>
+            <a href="/location.html">
+              <span class="material-symbols-outlined"> pin_drop </span>
+              Find Us
+            </a>
+            <a href="/contact.html">
+              <span class="material-symbols-outlined"> mail </span>
+              Contact
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- the news info section -->
-  <!-- needs links and proper text and images -->
-  <div class="section news">
-    <!-- find the links in the word doc cole sent, we need 10 articles-->
-    <a class="article featured" href="https://consultationhub.edinburgh.gov.uk/sfc/granton-gas-holder-restoration/">
-      <!-- link to the article -->
-      <img src="img/news/1-edinburgh-gov-gas-park.jpeg" alt="news image">
-      <div class="news-text">
-        <p style="font-style: italic;"> featured </p>
-        <h2> Granton Gasholder Park</h2> <!-- put the proper title from the article -->
-        <p>The City of Edinburgh Council would like to share the vision and proposals for the future of the Granton
-          Gasholder and gather views on how the space should be developed.</p> <!-- first paragraph of article -->
-      </div>
-    </a>
+    <!-- the news info section -->
+    <!-- needs links and proper text and images -->
+    <div class="section news">
+      <!-- find the links in the word doc cole sent, we need 10 articles-->
+      <a
+        class="article featured"
+        href="https://consultationhub.edinburgh.gov.uk/sfc/granton-gas-holder-restoration/"
+      >
+        <!-- link to the article -->
+        <img src="img/news/1-edinburgh-gov-gas-park.jpeg" alt="news image" />
+        <div class="news-text">
+          <p style="font-style: italic">featured</p>
+          <h2>Granton Gasholder Park</h2>
+          <!-- put the proper title from the article -->
+          <p>
+            The City of Edinburgh Council would like to share the vision and
+            proposals for the future of the Granton Gasholder and gather views
+            on how the space should be developed.
+          </p>
+          <!-- first paragraph of article -->
+        </div>
+      </a>
 
-    <a class="article regular-article"
-      href="https://www.edinburghlive.co.uk/news/edinburgh-news/edinburghs-granton-gasholder-lit-up-23345188">
-      <img src="img/news/2-edinburgh-live-ukraine.png" alt="news image">
-      <div class="news-text">
-        <h2> Edinburgh's Granton gasholder lit up with colours of Ukrainian flag in mark of support</h2>
-        <p>The 120-year-old steel structure has been the subject of various proposals in the past, including being
-          transformed into a coastal park. On Wednesday night, it was lit-up in blue and yellow as a mark of solidarity
-        </p>
-      </div>
-    </a>
-    <a class="article regular-article"
-      href="https://nen.press/2023/08/05/the-bell-the-bell-granton-gas-holder-work-progresses/">
-      <img src="img/news/3-nen-press-the-bell.jpeg" alt="news image">
-      <div class="news-text">
-        <h2>The Bell, the bell … Granton gas holder work progresses</h2>
-        <p>The bell that floated up as water filled the historic gasholder in Granton Waterfront has been taken apart to
-          make way for work to begin to restore the original 76 x 46 metre frame to look like new.</p>
-      </div>
-    </a>
-    <a class="article regular-article"
-      href="https://theedinburghreporter.co.uk/2021/11/levelling-up-funding-comes-to-granton/#google_vignette">
-      <img src="img/news/4-edinburgh-reporting-level-up.jpg" alt="news image">
-      <div class="news-text">
-        <h2> “Levelling Up” funding comes to Granton</h2>
-        <p>Some of the UK Government’s Levelling Up funding will help the plans to redevelop the first phase of the
-          development around the Granton Gas Holder.</p>
-      </div>
-    </a>
-    <!-- Copy from here -->
-    <a class="article regular-article"
-      href="https://nen.press/2025/04/04/new-park-opens-within-former-granton-gasholder/">
-      <img src="img/news/5-msn-new-park.png" alt="news image">
-      <div class="news-text">
-        <h2> New park opens within former Granton gasholder</h2>
-        <p>A new public park officially opened in Edinburgh today as part of the £1.3bn regeneration of Granton
-          Waterfront to become a new environmentally friendly coastal town. The Gasholder 1 Park sits within the
-          completely restored gasholder with views over the Firth of Forth.</p>
-      </div>
-    </a>
-    <!-- to here to add another article -->
-    <a class="article regular-article" href="https://www.bbc.co.uk/news/articles/cvgnpn8vx79o">
-      <img src="img/news/6-bbc-new-life.png" alt="news image">
-      <div class="news-text">
-        <h2> Public park brings new life to iconic gasholder site</h2>
-        <p>The sculpture by Edinburgh-based artist Svetlana Kondakora Muir stands in the middle of the 252ft (76m)
-          diameter frame - all that remains of the first gasholder on the site.</p>
-      </div>
-    </a>
-    <a class="article regular-article"
-      href="https://theedinburghreporter.co.uk/2025/04/gas-holder-in-granton-illuminated/">
-      <img src="img/news/7-edinburgh-reporter-illuminated.png" alt="news image">
-      <div class="news-text">
-        <h2> Gas holder in Granton illuminated</h2>
-        <p>Photographer and night owl, Tom Duffin, was in the park in March and also last night taking the photos below
-          to show the north Edinburgh focal point in all its glory.</p>
-      </div>
-    </a>
-    <a class="article regular-article"
-      href="https://www.heraldscotland.com/news/24722688.project-transform-gasholder-city-park-hits-milestone/">
-      <img src="img/news/8-herald-milestone.png" alt="news image">
-      <div class="news-text">
-        <h2> Project to transform gasholder into city park hits milestone</h2>
-        <p>A project to transform an 'iconic' city gasholder into an accessible open greenspace for community use has
-          reached a major milestone.
+      <a
+        class="article regular-article"
+        href="https://www.edinburghlive.co.uk/news/edinburgh-news/edinburghs-granton-gasholder-lit-up-23345188"
+      >
+        <img src="img/news/2-edinburgh-live-ukraine.png" alt="news image" />
+        <div class="news-text">
+          <h2>
+            Edinburgh's Granton gasholder lit up with colours of Ukrainian flag
+            in mark of support
+          </h2>
+          <p>
+            The 120-year-old steel structure has been the subject of various
+            proposals in the past, including being transformed into a coastal
+            park. On Wednesday night, it was lit-up in blue and yellow as a mark
+            of solidarity
+          </p>
+        </div>
+      </a>
+      <a
+        class="article regular-article"
+        href="https://nen.press/2023/08/05/the-bell-the-bell-granton-gas-holder-work-progresses/"
+      >
+        <img src="img/news/3-nen-press-the-bell.jpeg" alt="news image" />
+        <div class="news-text">
+          <h2>The Bell, the bell … Granton gas holder work progresses</h2>
+          <p>
+            The bell that floated up as water filled the historic gasholder in
+            Granton Waterfront has been taken apart to make way for work to
+            begin to restore the original 76 x 46 metre frame to look like new.
+          </p>
+        </div>
+      </a>
+      <a
+        class="article regular-article"
+        href="https://theedinburghreporter.co.uk/2021/11/levelling-up-funding-comes-to-granton/#google_vignette"
+      >
+        <img
+          src="img/news/4-edinburgh-reporting-level-up.jpg"
+          alt="news image"
+        />
+        <div class="news-text">
+          <h2>“Levelling Up” funding comes to Granton</h2>
+          <p>
+            Some of the UK Government’s Levelling Up funding will help the plans
+            to redevelop the first phase of the development around the Granton
+            Gas Holder.
+          </p>
+        </div>
+      </a>
+      <!-- Copy from here -->
+      <a
+        class="article regular-article"
+        href="https://nen.press/2025/04/04/new-park-opens-within-former-granton-gasholder/"
+      >
+        <img src="img/news/5-msn-new-park.png" alt="news image" />
+        <div class="news-text">
+          <h2>New park opens within former Granton gasholder</h2>
+          <p>
+            A new public park officially opened in Edinburgh today as part of
+            the £1.3bn regeneration of Granton Waterfront to become a new
+            environmentally friendly coastal town. The Gasholder 1 Park sits
+            within the completely restored gasholder with views over the Firth
+            of Forth.
+          </p>
+        </div>
+      </a>
+      <!-- to here to add another article -->
+      <a
+        class="article regular-article"
+        href="https://www.bbc.co.uk/news/articles/cvgnpn8vx79o"
+      >
+        <img src="img/news/6-bbc-new-life.png" alt="news image" />
+        <div class="news-text">
+          <h2>Public park brings new life to iconic gasholder site</h2>
+          <p>
+            The sculpture by Edinburgh-based artist Svetlana Kondakora Muir
+            stands in the middle of the 252ft (76m) diameter frame - all that
+            remains of the first gasholder on the site.
+          </p>
+        </div>
+      </a>
+      <a
+        class="article regular-article"
+        href="https://theedinburghreporter.co.uk/2025/04/gas-holder-in-granton-illuminated/"
+      >
+        <img
+          src="img/news/7-edinburgh-reporter-illuminated.png"
+          alt="news image"
+        />
+        <div class="news-text">
+          <h2>Gas holder in Granton illuminated</h2>
+          <p>
+            Photographer and night owl, Tom Duffin, was in the park in March and
+            also last night taking the photos below to show the north Edinburgh
+            focal point in all its glory.
+          </p>
+        </div>
+      </a>
+      <a
+        class="article regular-article"
+        href="https://www.heraldscotland.com/news/24722688.project-transform-gasholder-city-park-hits-milestone/"
+      >
+        <img src="img/news/8-herald-milestone.png" alt="news image" />
+        <div class="news-text">
+          <h2>Project to transform gasholder into city park hits milestone</h2>
+          <p>
+            A project to transform an 'iconic' city gasholder into an accessible
+            open greenspace for community use has reached a major milestone. The
+            scaffolding has been removed from Granton Gasholder in the Granton
+            Waterfront area of Edinburgh, as works to refurbish the structure
+            now known as ‘Gas Holder 1’ are complete.
+          </p>
+        </div>
+      </a>
+      <a class="article regular-article" href="#">
+        <img src="img/news/9-nen-new-park.png" alt="news image" />
+        <div class="news-text">
+          <h2>New park opens within former Granton gasholder</h2>
+          <p>
+            A new public park officially opened in Edinburgh today as part of
+            the £1.3bn regeneration of Granton Waterfront to become a new
+            environmentally friendly coastal town. The Gasholder 1 Park sits
+            within the completely restored gasholder with views over the Firth
+            of Forth.
+          </p>
+        </div>
+      </a>
 
-          The scaffolding has been removed from Granton Gasholder in the Granton Waterfront area of Edinburgh, as works
-          to refurbish the structure now known as ‘Gas Holder 1’ are complete.</p>
-      </div>
-    </a>
-    <a class="article regular-article" href="#">
-      <img src="img/news/9-nen-new-park.png" alt="news image">
-      <div class="news-text">
-        <h2>New park opens within former Granton gasholder</h2>
-        <p>A new public park officially opened in Edinburgh today as part of the £1.3bn regeneration of Granton
-          Waterfront to become a new environmentally friendly coastal town. The Gasholder 1 Park sits within the
-          completely restored gasholder with views over the Firth of Forth.</p>
-      </div>
-    </a>
-
-    <a class="article regular-article"
-      href="https://www.edinburghlive.co.uk/news/edinburgh-news/edinburghs-granton-gasholder-lit-up-23345188">
-      <img src="img/news/2-edinburgh-live-ukraine.png" alt="news image">
-      <div class="news-text">
-        <h2> Edinburgh's Granton gasholder lit up with colours of Ukrainian flag in mark of support</h2>
-        <p>The 120-year-old steel structure has been the subject of various proposals in the past, including being
-          transformed into a coastal park. On Wednesday night, it was lit-up in blue and yellow as a mark of solidarity
-        </p>
-      </div>
-    </a>
-    <a class="article regular-article"
-      href="https://theedinburghreporter.co.uk/2021/11/levelling-up-funding-comes-to-granton/#google_vignette">
-      <img src="img/news/4-edinburgh-reporting-level-up.jpg" alt="news image">
-      <div class="news-text">
-        <h2> “Levelling Up” funding comes to Granton</h2>
-        <p>Some of the UK Government’s Levelling Up funding will help the plans to redevelop the first phase of the
-          development around the Granton Gas Holder.</p>
-      </div>
-    </a>
-  </div>
-
-  <!-- footer / page selector-->
-  <div class="section page-selector">
-    <div class="slide fade">
-      <a href="/">
-        <h1>The Granton Gas Holder Project</h1>
-        <p>
-          Discover the heart of Edinburgh’s waterfront transformation. At the
-          centre of a £1.3 billion regeneration of the Granton waterfront, the
-          Granton Gas Holder stands as a powerful symbol of Edinburgh’s
-          industrial heritage and bright future. This iconic structure,
-          recently brought to life through a series of innovative lighting
-          installations and creative multimedia events by talented Edinburgh
-          College students, is more than just a landmark — it’s a celebration
-          of community, history, and creative vision.
-        </p>
+      <a
+        class="article regular-article"
+        href="https://www.edinburghlive.co.uk/news/edinburgh-news/edinburghs-granton-gasholder-lit-up-23345188"
+      >
+        <img src="img/news/2-edinburgh-live-ukraine.png" alt="news image" />
+        <div class="news-text">
+          <h2>
+            Edinburgh's Granton gasholder lit up with colours of Ukrainian flag
+            in mark of support
+          </h2>
+          <p>
+            The 120-year-old steel structure has been the subject of various
+            proposals in the past, including being transformed into a coastal
+            park. On Wednesday night, it was lit-up in blue and yellow as a mark
+            of solidarity
+          </p>
+        </div>
+      </a>
+      <a
+        class="article regular-article"
+        href="https://theedinburghreporter.co.uk/2021/11/levelling-up-funding-comes-to-granton/#google_vignette"
+      >
+        <img
+          src="img/news/4-edinburgh-reporting-level-up.jpg"
+          alt="news image"
+        />
+        <div class="news-text">
+          <h2>“Levelling Up” funding comes to Granton</h2>
+          <p>
+            Some of the UK Government’s Levelling Up funding will help the plans
+            to redevelop the first phase of the development around the Granton
+            Gas Holder.
+          </p>
+        </div>
       </a>
     </div>
-    <div class="slide fade">
-      <a href="/history.html">
-        <h1>The History of the Granton Gas Holder</h1>
-        <p>
-          From industrial powerhouse to cultural landmark. The Granton Gas
-          Holder has stood proudly on Edinburgh’s northern shoreline for over
-          a century, a striking reminder of the city’s industrial past and
-          engineering prowess. Constructed in 1903, the gas holder was once
-          part of the Granton Gasworks, a vital facility that provided gas for
-          homes, businesses, and street lighting across Edinburgh.
-        </p>
-      </a>
-    </div>
-    <div class="slide fade">
-      <a href="/news.html">
-        <h1>Latest News & Updates</h1>
-        <p>
-          Stay informed with the latest developments around the Granton Gas
-          Holder project. This section is your go-to source for news,
-          announcements, and behind-the-scenes updates about the Granton Gas
-          Holder and the wider regeneration of the Granton waterfront. From
-          lighting events and student showcases to milestones in the £1.3bn
-          redevelopment, this is where the story continues to unfold.
-        </p>
-      </a>
-    </div>
-    <div class="slide fade">
-      <a href="/gallery.html">
-        <h1>Illuminating the Granton Gas Holder</h1>
-        <p>
-          A visual journey through heritage, creativity, and transformation.
-          Step into the story of the Granton Gas Holder through a curated
-          selection of high-quality images and dynamic multimedia content that
-          captures the beauty, scale, and spirit of this iconic Edinburgh
-          landmark.
-        </p>
-      </a>
-    </div>
-    <div class="slide fade">
-      <a href="/live.html">
-        <h1>Live: Granton Gas Holder in Real Time</h1>
-        <p>
-          Experience the Granton Gas Holder — anytime, anywhere. Watch the
-          iconic Granton Gas Holder as it stands today — live and in real
-          time. Whether you’re nearby or across the globe, this live video
-          stream gives you a front-row view of one of Edinburgh’s most
-          striking landmarks, 24/7.
-        </p>
-      </a>
-    </div>
-    <div class="slide fade">
-      <a href="/location.html">
-        <h1>Visit the Granton Gas Holder</h1>
-        <p>
-          Find your way to one of Edinburgh’s most iconic landmarks. Located
-          on the northern edge of Edinburgh, the Granton Gas Holder sits at
-          the heart of a major urban transformation — the £1.3 billion Granton
-          waterfront regeneration project. With its towering steel frame and
-          striking presence, the gas holder is a must-see destination for
-          locals, visitors, and history enthusiasts alike.
-        </p>
-      </a>
-    </div>
-    <!-- Copy from here -->
-    <div class="slide fade">
-      <a href="/contact.html">
-        <h1>Contact us, We’d love to hear from you.</h1>
-        <p>
-          Whether you have questions about the Granton Gas Holder project,
-          want to get involved, or have media or collaboration enquiries, our
-          team is here to help.
-        </p>
-      </a>
-    </div>
-    <!-- to here to add another -->
-    <span class="material-symbols-outlined arrow back" onclick="changeslide(-1)">
-      arrow_back
-    </span>
-    <span class="material-symbols-outlined arrow forward" onclick="changeslide(1)">
-      arrow_forward
-    </span>
-  </div>
 
-  <!-- email/socials-->
-  <div class="section footer">
-    <div class="form">
-      <form>
-        <input type="text" id="email" name="email" placeholder="sign up for our newsletter:">
-        <input type="submit" value="submit">
-      </form>
+    <!-- footer / page selector-->
+    <div class="section page-selector">
+      <div class="slide fade">
+        <a href="/">
+          <h1>The Granton Gas Holder Project</h1>
+          <p>
+            Discover the heart of Edinburgh’s waterfront transformation. At the
+            centre of a £1.3 billion regeneration of the Granton waterfront, the
+            Granton Gas Holder stands as a powerful symbol of Edinburgh’s
+            industrial heritage and bright future. This iconic structure,
+            recently brought to life through a series of innovative lighting
+            installations and creative multimedia events by talented Edinburgh
+            College students, is more than just a landmark — it’s a celebration
+            of community, history, and creative vision.
+          </p>
+        </a>
+      </div>
+      <div class="slide fade">
+        <a href="/history.html">
+          <h1>The History of the Granton Gas Holder</h1>
+          <p>
+            From industrial powerhouse to cultural landmark. The Granton Gas
+            Holder has stood proudly on Edinburgh’s northern shoreline for over
+            a century, a striking reminder of the city’s industrial past and
+            engineering prowess. Constructed in 1903, the gas holder was once
+            part of the Granton Gasworks, a vital facility that provided gas for
+            homes, businesses, and street lighting across Edinburgh.
+          </p>
+        </a>
+      </div>
+      <div class="slide fade">
+        <a href="/news.html">
+          <h1>Latest News & Updates</h1>
+          <p>
+            Stay informed with the latest developments around the Granton Gas
+            Holder project. This section is your go-to source for news,
+            announcements, and behind-the-scenes updates about the Granton Gas
+            Holder and the wider regeneration of the Granton waterfront. From
+            lighting events and student showcases to milestones in the £1.3bn
+            redevelopment, this is where the story continues to unfold.
+          </p>
+        </a>
+      </div>
+      <div class="slide fade">
+        <a href="/gallery.html">
+          <h1>Illuminating the Granton Gas Holder</h1>
+          <p>
+            A visual journey through heritage, creativity, and transformation.
+            Step into the story of the Granton Gas Holder through a curated
+            selection of high-quality images and dynamic multimedia content that
+            captures the beauty, scale, and spirit of this iconic Edinburgh
+            landmark.
+          </p>
+        </a>
+      </div>
+      <div class="slide fade">
+        <a href="/live.html">
+          <h1>Live: Granton Gas Holder in Real Time</h1>
+          <p>
+            Experience the Granton Gas Holder — anytime, anywhere. Watch the
+            iconic Granton Gas Holder as it stands today — live and in real
+            time. Whether you’re nearby or across the globe, this live video
+            stream gives you a front-row view of one of Edinburgh’s most
+            striking landmarks, 24/7.
+          </p>
+        </a>
+      </div>
+      <div class="slide fade">
+        <a href="/location.html">
+          <h1>Visit the Granton Gas Holder</h1>
+          <p>
+            Find your way to one of Edinburgh’s most iconic landmarks. Located
+            on the northern edge of Edinburgh, the Granton Gas Holder sits at
+            the heart of a major urban transformation — the £1.3 billion Granton
+            waterfront regeneration project. With its towering steel frame and
+            striking presence, the gas holder is a must-see destination for
+            locals, visitors, and history enthusiasts alike.
+          </p>
+        </a>
+      </div>
+      <!-- Copy from here -->
+      <div class="slide fade">
+        <a href="/contact.html">
+          <h1>Contact us, We’d love to hear from you.</h1>
+          <p>
+            Whether you have questions about the Granton Gas Holder project,
+            want to get involved, or have media or collaboration enquiries, our
+            team is here to help.
+          </p>
+        </a>
+      </div>
+      <!-- to here to add another -->
+      <span
+        class="material-symbols-outlined arrow back"
+        onclick="changeslide(-1)"
+      >
+        arrow_back
+      </span>
+      <span
+        class="material-symbols-outlined arrow forward"
+        onclick="changeslide(1)"
+      >
+        arrow_forward
+      </span>
     </div>
-    <div class="socials">
-      <!-- put social media links and images here-->
-      <a href="https://tiktok.com/" class="social-logo"><img src="img/social_media_icons/Tik_Tok_Logo.jpg"
-          alt="tiktok"></a>
-      <a href="https://facebook.com/" class="social-logo"><img src="img/social_media_icons/Facebook_Logo.jpg"
-          alt="facebook"></a>
-      <a href="https://instagram.com/" class="social-logo"><img src="img/social_media_icons/Instagram_Logo.jpg"
-          alt="instagram"></a>
-      <a href="https://twitter.com/" class="social-logo"><img src="img/social_media_icons/X_Logo.jpg" alt="X"></a>
+
+    <!-- email/socials-->
+    <div class="section footer">
+      <div class="form">
+        <form>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="sign up for our newsletter:"
+          />
+          <input type="submit" value="submit" />
+        </form>
+      </div>
+      <div class="socials">
+        <!-- put social media links and images here-->
+        <a href="https://tiktok.com/" class="social-logo"
+          ><img src="img/social_media_icons/Tik_Tok_Logo.jpg" alt="tiktok"
+        /></a>
+        <a href="https://facebook.com/" class="social-logo"
+          ><img src="img/social_media_icons/Facebook_Logo.jpg" alt="facebook"
+        /></a>
+        <a href="https://instagram.com/" class="social-logo"
+          ><img src="img/social_media_icons/Instagram_Logo.jpg" alt="instagram"
+        /></a>
+        <a href="https://twitter.com/" class="social-logo"
+          ><img src="img/social_media_icons/X_Logo.jpg" alt="X"
+        /></a>
+      </div>
     </div>
-  </div>
 
-  <script>
-    slideHeight()
-    let slideIndex = 1;
-    changeslide(3);
-    dropdown.style.display = "none";
-  </script>
-</body>
-
+    <script>
+      slideHeight();
+      let slideIndex = 1;
+      changeslide(3);
+      dropdown.style.display = "none";
+    </script>
+  </body>
 </html>
