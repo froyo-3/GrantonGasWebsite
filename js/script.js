@@ -1,3 +1,4 @@
+// dropdown menu
 function OpenDropdown() {
   if (dropdown.style.display === "none") {
     dropdown.style.display = "flex";
@@ -14,6 +15,7 @@ function OpenDropdown() {
   }
 };
 
+// image carosel functionality
 function changeimgslide(newslide) {
   function slides(newslide) {
     slides = document.getElementsByClassName("img-slide");
@@ -27,6 +29,7 @@ function changeimgslide(newslide) {
   slides(imgslideIndex += newslide);
 }
 
+// automatic switching of slides
 function autoSlides(){
   let i;
   let slides = document.getElementsByClassName("img-slide");
@@ -41,7 +44,7 @@ function autoSlides(){
   setTimeout(autoSlides, 5000);
 }
 
-
+// changes the page selector slides
 function changeslide(newslide) {
   function slides(newslide) {
     slides = document.getElementsByClassName("slide");
@@ -55,6 +58,7 @@ function changeslide(newslide) {
   slides(slideIndex += newslide);
 }
 
+// makes page selector slides all the same height bcos css is useless
 function slideHeight() {
   let slides = document.getElementsByClassName("slide");
   largestHeight = 0;
