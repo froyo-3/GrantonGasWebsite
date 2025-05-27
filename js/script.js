@@ -30,7 +30,7 @@ function changeimgslide(newslide) {
 }
 
 // automatic switching of slides
-function autoSlides(){
+function autoSlides() {
   let i;
   let slides = document.getElementsByClassName("img-slide");
   for (i = 0; i < slides.length; i++) {
@@ -38,8 +38,8 @@ function autoSlides(){
   }
 
   imgslideIndex++;
-  if (imgslideIndex > slides.length) {imgslideIndex = 1}
-  slides[imgslideIndex-1].style.display = "block";
+  if (imgslideIndex > slides.length) { imgslideIndex = 1 }
+  slides[imgslideIndex - 1].style.display = "block";
 
   setTimeout(autoSlides, 5000);
 }
